@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { RecipesPage } from '../pages/recipes/recipes';
+import { ExercisesPage } from '../pages/exercises/exercises';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,7 @@ export class MyApp {
       { title: 'Glucose Meter', component: ListPage, icon: 'cafe' },
       { title: 'Recipes', component: RecipesPage, icon: 'restaurant' },
       { title: 'Keto Store', component: ListPage, icon: 'basket' },
-      { title: 'Exercise', component: ListPage , icon: 'bicycle'},
+      { title: 'Exercise', component: ExercisesPage , icon: 'bicycle'},
       { title: 'Others', component: ListPage, icon: 'options' }
       
     ];
