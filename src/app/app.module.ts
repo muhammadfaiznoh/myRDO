@@ -1,3 +1,5 @@
+import { ComponentsModule } from './../components/components.module';
+import { IfastingPage } from './../pages/ifasting/ifasting';
 import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -19,11 +21,17 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     ListPage,
     LoginPage,
     RecipesPage,
-    ExercisesPage
+    ExercisesPage,
+    IfastingPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    ComponentsModule
+  ],
+  exports: [
+    ComponentsModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -32,7 +40,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     ListPage,
     LoginPage,
     RecipesPage,
-    ExercisesPage
+    ExercisesPage,
+    IfastingPage
   ],
   providers: [
     StatusBar,

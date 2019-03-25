@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { RecipesPage } from '../pages/recipes/recipes';
 import { ExercisesPage } from '../pages/exercises/exercises';
+import { IfastingPage } from '../pages/ifasting/ifasting';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,7 +26,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage ,icon: 'home'},
       { title: 'Profile', component: ListPage, icon: 'person' },
-      { title: 'IF Meter', component: ListPage, icon: 'speedometer' },
+      { title: 'IF Meter', component: IfastingPage, icon: 'speedometer' },
       { title: 'Glucose Meter', component: ListPage, icon: 'cafe' },
       { title: 'Recipes', component: RecipesPage, icon: 'restaurant' },
       { title: 'Keto Store', component: ListPage, icon: 'basket' },
