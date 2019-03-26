@@ -1,3 +1,4 @@
+import { ProfilePage } from './../pages/profile/profile';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -25,7 +26,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage ,icon: 'home'},
-      { title: 'Profile', component: ListPage, icon: 'person' },
+      { title: 'Profile', component: ProfilePage, icon: 'person' },
       { title: 'IF Meter', component: IfastingPage, icon: 'speedometer' },
       { title: 'Glucose Meter', component: ListPage, icon: 'cafe' },
       { title: 'Recipes', component: RecipesPage, icon: 'restaurant' },

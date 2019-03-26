@@ -1,3 +1,4 @@
+import { ProfilePage } from './../pages/profile/profile';
 import { ComponentsModule } from './../components/components.module';
 import { IfastingPage } from './../pages/ifasting/ifasting';
 import { LoginPage } from './../pages/login/login';
@@ -22,7 +23,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     LoginPage,
     RecipesPage,
     ExercisesPage,
-    IfastingPage
+    IfastingPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     LoginPage,
     RecipesPage,
     ExercisesPage,
-    IfastingPage
+    IfastingPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
