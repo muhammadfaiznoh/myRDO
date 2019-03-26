@@ -42,7 +42,7 @@ export class HomePage {
  
   getBarChart() {
     const data = {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
       datasets: [{
         label: '# of Votes',
         data: [12, 19, 3, 5, 2, 3],
