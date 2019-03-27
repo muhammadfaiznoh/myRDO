@@ -14,3 +14,36 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.bg-page {
+    background-color: #fff;
+    &::after {
+      content: "";
+      background: url("../assets/imgs/bg.jpg") no-repeat;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 0;
+    }
+}
+#menu-avatar {
+    .user-avatar {
+      padding: .5em;
+    }
+    h3,
+    .label {
+      color: white;
+      font-weight: bold;
+    }
+    .item {
+      background: transparent;
+    }
+    ion-content {
+      background: linear-gradient(48deg, rgba(255, 0, 0, 0.8) 0%, rgba(202, 53, 42, 0.86) 28%, rgba(0, 31, 168, 0.98) 93%, rgb(0, 67, 168) 100%);
+    }
+    .menu-inner {
+      background: rgba(255, 255, 255, .3);
+    }
+  }

@@ -1,3 +1,4 @@
+import { components } from './../components/components.module';
 import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
 import { Component, ViewChild } from '@angular/core';
@@ -51,6 +52,12 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.push(page.component);
+    if(page.component==HomePage)
+    {
+      this.nav.root(page.component);
+    }else{
+      this.nav.push(page.component);
+    }
+    
   }
 }
