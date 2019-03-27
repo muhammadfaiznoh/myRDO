@@ -1,3 +1,4 @@
+import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
 import { ComponentsModule } from './../components/components.module';
 import { IfastingPage } from './../pages/ifasting/ifasting';
@@ -24,7 +25,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     RecipesPage,
     ExercisesPage,
     IfastingPage,
-    ProfilePage
+    ProfilePage,
+    GlucosemeterPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     RecipesPage,
     ExercisesPage,
     IfastingPage,
-    ProfilePage
+    ProfilePage,
+    GlucosemeterPage
   ],
   providers: [
     StatusBar,

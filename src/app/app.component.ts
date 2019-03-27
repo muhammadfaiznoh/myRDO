@@ -1,3 +1,4 @@
+import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -28,7 +29,7 @@ export class MyApp {
       { title: 'Home', component: HomePage ,icon: 'home'},
       { title: 'Profile', component: ProfilePage, icon: 'person' },
       { title: 'IF Meter', component: IfastingPage, icon: 'speedometer' },
-      { title: 'Glucose Meter', component: ListPage, icon: 'cafe' },
+      { title: 'Glucose Meter', component: GlucosemeterPage, icon: 'cafe' },
       { title: 'Recipes', component: RecipesPage, icon: 'restaurant' },
       { title: 'Keto Store', component: ListPage, icon: 'basket' },
       { title: 'Exercise', component: ExercisesPage , icon: 'bicycle'},
