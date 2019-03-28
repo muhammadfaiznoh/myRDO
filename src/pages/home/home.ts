@@ -44,7 +44,7 @@ export class HomePage {
     const data = {
       labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'],
       datasets: [{
-        label: '# of Votes',
+        label: 'mmol/L',
         data: [12, 19, 3, 5, 2, 3,20],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
