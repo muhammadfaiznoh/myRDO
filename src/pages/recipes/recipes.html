@@ -10,9 +10,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page bg-page">
+<ion-content padding class=" bg-page">
 
-  <ion-card>
+  <!-- <ion-card>
     <img src="assets/imgs/background/bulletproof_coffee.jpg"/>
     <div class="card-title">Bulletproof Coffee</div>
     
@@ -40,6 +40,17 @@
     <img src="assets/imgs/background/mexican-hot-chocolate.jpg"/>
     <div class="card-title">Keto Hot Chocolate</div>
   
-  </ion-card>
-
+  </ion-card> -->
+  <accordion-list *ngFor="let item of items; let index = index"
+  [title]="item.name"
+  textColor="#FFF"
+  hasMargin="false"
+  headerColor="#F53D3D"
+ >
+<img [src]="item.imageUrl">
+<ion-title>Ingredient</ion-title>
+<p >{{item.ingredient}}</p>
+<ion-title>Direction</ion-title>
+<p >{{item.direction}}</p>
+</accordion-list>
 </ion-content>
