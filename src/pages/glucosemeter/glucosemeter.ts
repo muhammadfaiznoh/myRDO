@@ -1,5 +1,6 @@
+import { GlucoseTestPage } from './../glucose-test/glucose-test';
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
 import chartJs from 'chart.js';
 
 /**
@@ -39,6 +40,10 @@ export class GlucosemeterPage {
     });
   }
 
+  goToGlucoseTestPage(){
+    this.navCtrl.push(GlucoseTestPage);
+  }
+
   /*
   *  By specifying different types inside each dataset
   *  it's possible to have multiple bar types mixed into one.
@@ -46,17 +51,18 @@ export class GlucosemeterPage {
  
   getBarChart() {
     const data = {
-      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'mmol/L',
+        data: [12, 19, 3, 5, 2, 3,20],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
           'rgba(255, 206, 86, 0.2)',
           'rgba(75, 192, 192, 0.2)',
           'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
+          'rgba(255, 159, 64, 0.2)',
+          'rgba(255, 2, 64, 0.2)'
         ],
         borderColor: [
           'rgba(255,99,132,1)',
@@ -64,7 +70,8 @@ export class GlucosemeterPage {
           'rgba(255, 206, 86, 1)',
           'rgba(75, 192, 192, 1)',
           'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
+          'rgba(255, 159, 64, 1)',
+          'rgba(255, 2, 64, 0.2)'
         ],
         borderWidth: 1
       }]

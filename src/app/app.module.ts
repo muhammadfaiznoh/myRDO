@@ -1,3 +1,4 @@
+import { GlucoseTestPage } from './../pages/glucose-test/glucose-test';
 import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
 import { ComponentsModule } from './../components/components.module';
@@ -26,7 +27,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     ExercisesPage,
     IfastingPage,
     ProfilePage,
-    GlucosemeterPage
+    GlucosemeterPage,
+    GlucoseTestPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
     ExercisesPage,
     IfastingPage,
     ProfilePage,
-    GlucosemeterPage
+    GlucosemeterPage,
+    GlucoseTestPage
   ],
   providers: [
     StatusBar,
