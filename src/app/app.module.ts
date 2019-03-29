@@ -16,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RecipesPage } from '../pages/recipes/recipes';
 import { ExercisesPage } from '../pages/exercises/exercises';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
   exports: [
     ComponentsModule,

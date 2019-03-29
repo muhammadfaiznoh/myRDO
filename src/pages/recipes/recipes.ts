@@ -1,5 +1,7 @@
+import { Http, Headers , RequestOptions } from '@angular/http';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 
 /**
  * Generated class for the RecipesPage page.
@@ -14,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'recipes.html',
 })
 export class RecipesPage {
+  recipe: any;
   items = [
     {
       name: 'Bulletproof Coffee',
@@ -47,11 +50,24 @@ export class RecipesPage {
       imageUrl: 'assets/imgs/background/mexican-hot-chocolate.jpg',
     }
   ]
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RecipesPage');
   }
 
+  getRecipe(){
+    var headers= new Headers();
+    headers.append('Content-Type','application/json;charset=UTF-8');
+    var link='';
+    let options= new RequestOptions({headers:headers});
+    this.http.post(link,options)
+    .subscribe(data=>{
+      var result;
+      result = data["_body"];
+      this.recipe=JSON.parse(result);
+
+    });
+  }
 }
