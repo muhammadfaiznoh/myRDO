@@ -18,7 +18,7 @@ import { IfastingPage } from '../pages/ifasting/ifasting';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = ProfilePage;
 
   pages: Array<{title: string, component: any, icon: any}>;
 
@@ -27,7 +27,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage ,icon: 'home'},
+      // { title: 'Home', component: HomePage ,icon: 'home'},
       { title: 'Profile', component: ProfilePage, icon: 'person' },
       { title: 'IF Meter', component: IfastingPage, icon: 'speedometer' },
       { title: 'Glucose Meter', component: GlucosemeterPage, icon: 'cafe' },
@@ -52,7 +52,7 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    if(page.component==HomePage)
+    if(page.component==ProfilePage)
     {
       this.nav.root(page.component);
     }else{

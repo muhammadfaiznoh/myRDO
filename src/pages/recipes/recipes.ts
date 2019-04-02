@@ -60,9 +60,9 @@ export class RecipesPage {
   getRecipe(){
     var headers= new Headers();
     headers.append('Content-Type','application/json;charset=UTF-8');
-    var link='';
+    var link='http://ibsb.dlinkddns.com/eJabatanLautMalaysia/api/maint_schedule.php';
     let options= new RequestOptions({headers:headers});
-    this.http.post(link,options)
+    this.http.get(link,options)
     .subscribe(data=>{
       var result;
       result = data["_body"];
