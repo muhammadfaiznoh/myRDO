@@ -10,7 +10,7 @@ page-item ,
   
     .btn-wish-list {
       position: absolute;
-      top: -20px;
+      top: 250px;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -18,9 +18,9 @@ page-item ,
       right: 1rem;
     }
   
-    // .item-stats {
-    //   ion-col + ion-col {
-    //     border-left: 1px solid color($colors, bgColor);
-    //   }
-    // }
+    .item-stats {
+      ion-col + ion-col {
+        border-left: 1px solid color($colors, bgColor);
+      }
+    }
   }

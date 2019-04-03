@@ -44,19 +44,19 @@ range(n) {
 }
 
 // open item option modal
-// showOptions(item) {
-//   // show modal
-//   let modal = this.modalCtrl.create(ModalItemOptionPage, {item: item});
+showOptions(item) {
+  // show modal
+  let modal = this.modalCtrl.create(ModalItemOptionPage, {item: item});
 
-//   // listen for modal close
-//   modal.onDidDismiss(confirm => {
-//     if (confirm) {
-//       // apply filter here
-//     } else {
-//       // do nothing
-//     }
-//   });
+  // listen for modal close
+  modal.onDidDismiss(confirm => {
+    if (confirm) {
+      // apply filter here
+    } else {
+      // do nothing
+    }
+  });
 
-//   modal.present();
-// }
+  modal.present();
+}
 }
