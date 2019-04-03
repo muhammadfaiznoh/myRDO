@@ -1,3 +1,4 @@
+import { StorePage } from './../pages/store/store';
 import { GlucoseTestPage } from './../pages/glucose-test/glucose-test';
 import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
@@ -19,6 +20,8 @@ import { ExercisesPage } from '../pages/exercises/exercises';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
+import {ItemService} from '../../services/item-service';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +33,8 @@ import { HttpModule } from '@angular/http';
     IfastingPage,
     ProfilePage,
     GlucosemeterPage,
-    GlucoseTestPage
+    GlucoseTestPage,
+    StorePage
   ],
   imports: [
     BrowserModule,
@@ -53,12 +57,14 @@ import { HttpModule } from '@angular/http';
     IfastingPage,
     ProfilePage,
     GlucosemeterPage,
-    GlucoseTestPage
+    GlucoseTestPage,
+    StorePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ItemService
   ]
 })
 export class AppModule {}

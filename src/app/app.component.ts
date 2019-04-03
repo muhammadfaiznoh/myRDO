@@ -1,3 +1,4 @@
+import { StorePage } from './../pages/store/store';
 import { components } from './../components/components.module';
 import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
 import { ProfilePage } from './../pages/profile/profile';
@@ -32,9 +33,9 @@ export class MyApp {
       { title: 'IF Meter', component: IfastingPage, icon: 'speedometer' },
       { title: 'Glucose Meter', component: GlucosemeterPage, icon: 'cafe' },
       { title: 'Recipes', component: RecipesPage, icon: 'restaurant' },
-      { title: 'Keto Store', component: ListPage, icon: 'basket' },
+      { title: 'Keto Store', component: StorePage, icon: 'basket' },
       { title: 'Exercise', component: ExercisesPage , icon: 'bicycle'},
-      { title: 'Others', component: ListPage, icon: 'options' }
+      //{ title: 'Others', component: ListPage, icon: 'options' }
       
     ];
 
