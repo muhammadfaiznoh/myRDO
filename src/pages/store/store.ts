@@ -1,6 +1,7 @@
 import { ItemService } from './../../../services/item-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ItemPage } from '../item/item';
 
 
 /**
@@ -39,7 +40,7 @@ export class StorePage {
   }
    // view a item
    viewItem(itemId) {
-   // this.navCtrl.push(ItemPage, {id: itemId})
+   this.navCtrl.push(ItemPage, {id: itemId})
   }
 
 

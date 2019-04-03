@@ -1,3 +1,4 @@
+import { ItemPage } from './../pages/item/item';
 import { StorePage } from './../pages/store/store';
 import { GlucoseTestPage } from './../pages/glucose-test/glucose-test';
 import { GlucosemeterPage } from './../pages/glucosemeter/glucosemeter';
@@ -34,7 +35,8 @@ import {ItemService} from '../../services/item-service';
     ProfilePage,
     GlucosemeterPage,
     GlucoseTestPage,
-    StorePage
+    StorePage,
+    ItemPage
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import {ItemService} from '../../services/item-service';
     ProfilePage,
     GlucosemeterPage,
     GlucoseTestPage,
-    StorePage
+    StorePage,
+    ItemPage
   ],
   providers: [
     StatusBar,
