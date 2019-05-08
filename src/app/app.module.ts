@@ -1,3 +1,4 @@
+import { ModalItemOptionPage } from './../pages/modal-item-option/modal-item-option';
 import { ItemPage } from './../pages/item/item';
 import { StorePage } from './../pages/store/store';
 import { GlucoseTestPage } from './../pages/glucose-test/glucose-test';
@@ -36,7 +37,7 @@ import {ItemService} from '../../services/item-service';
     GlucosemeterPage,
     GlucoseTestPage,
     StorePage,
-    ItemPage
+    ItemPage, ModalItemOptionPage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +62,7 @@ import {ItemService} from '../../services/item-service';
     GlucosemeterPage,
     GlucoseTestPage,
     StorePage,
-    ItemPage
+    ItemPage, ModalItemOptionPage
   ],
   providers: [
     StatusBar,

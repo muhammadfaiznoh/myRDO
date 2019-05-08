@@ -26,14 +26,14 @@
     </ion-thumbnail>
     <div>
       <h2 class="price" ion-text color="danger" margin-top *ngIf="item.sale_price">{{ item.sale_price + item.option_price |
-        currency:'USD':true }}</h2>
+        currency:'RM':true }}</h2>
       <h2 class="price" ion-text color="danger" margin-top *ngIf="!item.sale_price">{{ item.price + item.option_price |
-        currency:'USD':true }}</h2>
+        currency:'RM':true }}</h2>
       <span ion-text color="gray">{{ item.selectedOptions }}</span>
     </div>
   </ion-item>
 
-  <div class="border-bottom" padding *ngFor="let optionGroup of item.option_groups">
+  <!-- <div class="border-bottom" padding *ngFor="let optionGroup of item.option_groups">
     <div>
       {{ optionGroup.name }}
       <span padding-left>{{ optionGroup.currentOption ? optionGroup.currentOption.name : '' }}</span>
@@ -43,7 +43,7 @@
          [ngClass]="{'active': option.active}">
       {{ option.name }}
     </div>
-  </div>
+  </div> -->
 
   <div class="border-bottom">
     <ion-item class="no-border">

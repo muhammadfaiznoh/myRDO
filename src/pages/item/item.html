@@ -37,11 +37,11 @@
 
     <div text-center padding margin-top class="border-bottom">
       <p>{{ item.short_description }}</p>
-      <h1 class="price" ion-text color="danger" margin-top *ngIf="item.sale_price">{{ item.sale_price | currency:'USD':true
+      <h1 class="price" ion-text color="danger" margin-top *ngIf="item.sale_price">{{ item.sale_price | currency:'RM':true
         }}</h1>
-      <h1 class="price" ion-text color="danger" margin-top *ngIf="!item.sale_price">{{ item.price | currency:'USD':true }}</h1>
+      <h1 class="price" ion-text color="danger" margin-top *ngIf="!item.sale_price">{{ item.price | currency:'RM':true }}</h1>
       <h2 class="origin-price text-decoration" ion-text color="gray" margin-top *ngIf="item.sale_price">{{ item.price |
-        currency:'USD':true }}</h2>
+        currency:'RM':true }}</h2>
     </div>
 
     <ion-grid>
@@ -66,7 +66,7 @@
   <div class="card light-bg" margin-top>
     <ion-item class="no-border">
       <div>
-        <div>{{ getOptionGroupsName(item) }}</div>
+        <!-- <div>{{ getOptionGroupsName(item) }}</div> -->
         <div>
           <span ion-text color="gray" class="pull-left" *ngIf="item.shipping == 0">Free shipping</span>
           <span ion-text color="gray" class="pull-left" *ngIf="item.shipping != 0">Shipping: {{ item.shipping | currency:'USD':true}}</span>

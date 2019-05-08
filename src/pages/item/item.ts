@@ -1,6 +1,7 @@
 import { ItemService } from './../../../services/item-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ModalItemOptionPage } from '../modal-item-option/modal-item-option';
 
 /**
  * Generated class for the ItemPage page.
